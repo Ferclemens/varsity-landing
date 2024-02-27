@@ -1,10 +1,10 @@
-import { Button } from "@/components/ui/button"
+import Hero from "./components/Hero"
 
 function App() {
 
   return (
     <>
-      <Button>Click me</Button>
+      <Hero/>
     </>
   )
 }
