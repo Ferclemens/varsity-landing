@@ -19,13 +19,13 @@ function Services() {
 
   return (
     <section>
-      <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-center py-20">
+      <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-left py-12 pl-7">
         Servicios
       </h2>
-      <div className="flex flex-col  lg:flex-row bg-blue-950">
+      <div className="flex flex-col lg:flex-row bg-blue-950">
         {data.map((item) => {
           return (
-            <div className="m-10 px-6 py-5 text-gray-100 bg-gradient-to-br from-blue-900 to-slate-500 rounded-sm">
+            <div className="m-10 px-6 py-5 text-gray-100 bg-gradient-to-br from-blue-900 to-slate-500 rounded-sm shadow-xl">
               <h3 className="pb-6 font-bold tracking-wide text-3xl">
                 {item.title}
               </h3>
