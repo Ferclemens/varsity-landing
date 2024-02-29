@@ -44,7 +44,7 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-bold leading-6 text-gray-900 hover:text-blue-800 transition-colors"
               >
                 {item.name}
               </a>
@@ -110,7 +110,7 @@ export default function Hero() {
           />
         </div>
         <div className="flex gap-10 py-14">
-          <div className="max-w-2xl sm:py-24 lg:py-50">
+          <div className="max-w-2xl py-14 sm:py-14 lg:py-50">
             <div className="text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Da ese impulso que tu marca necesita
@@ -122,7 +122,7 @@ export default function Hero() {
               <div className="mt-10 flex items-center gap-x-10">
                 <a
                   href="#"
-                  className="rounded-md bg-blue-800 px-6 py-3.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-blue-800 px-6 py-3.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors"
                 >
                   Contactanos
                 </a>
@@ -135,7 +135,7 @@ export default function Hero() {
               </div>
             </div>
           </div>
-          <div className="hidden lg:inline pt-20 xl:pt-0">
+          <div className="hidden lg:inline xl:pt-0">
             <img
               className="object-cover"
               src="./marketing-digital.png"

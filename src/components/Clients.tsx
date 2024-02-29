@@ -1,4 +1,4 @@
-function Services() {
+function Clients() {
   const data = [
     {
       title: "Análisis de Negocio",
@@ -38,4 +38,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Clients;
