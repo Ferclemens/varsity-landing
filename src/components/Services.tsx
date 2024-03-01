@@ -23,9 +23,12 @@ function Services() {
         Servicios
       </h2>
       <div className="flex flex-col lg:flex-row bg-blue-950">
-        {data.map((item) => {
+        {data.map((item, index) => {
           return (
-            <div className="m-10 px-6 py-5 text-gray-100 bg-gradient-to-br from-blue-900 to-slate-500 rounded-sm shadow-xl">
+            <div
+              key={index}
+              className="m-10 px-6 py-5 text-gray-100 bg-gradient-to-br from-blue-900 to-slate-500 rounded-sm shadow-xl"
+            >
               <h3 className="pb-6 font-bold tracking-wide text-3xl">
                 {item.title}
               </h3>
