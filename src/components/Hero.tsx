@@ -3,9 +3,9 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Servicios", href: "#" },
+  { name: "Servicios", href: "#services" },
   { name: "Nosotros", href: "#" },
-  { name: "Clientes", href: "#" },
+  { name: "Clientes", href: "#clients" },
   { name: "Contactos", href: "#" },
 ];
 
@@ -58,7 +58,7 @@ export default function Hero() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-1/2 overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Varsity Raptor</span>
@@ -109,8 +109,8 @@ export default function Hero() {
             }}
           />
         </div>
-        <div className="flex gap-10 py-14">
-          <div className="max-w-2xl py-14 sm:py-14 lg:py-50">
+        <div className="flex gap-10 py-5">
+          <div className="max-w-2xl py-14 sm:py-14 lg:py-50" id="hero">
             <div className="text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                 Da ese impulso que tu marca necesita
@@ -138,7 +138,7 @@ export default function Hero() {
           <div className="hidden lg:inline xl:pt-0">
             <img
               className="object-cover"
-              src="./marketing-digital.png"
+              src="./marketing-digital.webp"
               alt="Ilustración de marketing digital"
             />
           </div>

@@ -1,44 +1,75 @@
-function Services() {
-  const data = [
-    {
-      title: "Análisis de Negocio",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      title: "Branding",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-    {
-      title: "Social Media",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    },
-  ];
+import {
+  ArrowPathIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+} from "@heroicons/react/24/outline";
 
+const features = [
+  {
+    name: "Branding",
+    description:
+      "Potenciamos tu marca con identidad única y estrategias impactantes.",
+    icon: CloudArrowUpIcon,
+  },
+  {
+    name: "Comunity Management",
+    description:
+      "Construimos y gestionamos comunidades en línea para maximizar tu alcance y compromiso.",
+    icon: LockClosedIcon,
+  },
+  {
+    name: "Análisis de rendimientos",
+    description:
+      "Utilizamos datos detallados para identificar tendencias, mejorar estrategias y maximizar resultados.",
+    icon: ArrowPathIcon,
+  },
+  {
+    name: "Servicios web",
+    description:
+      "Creamos soluciones digitales personalizadas para tu éxito en línea.",
+    icon: FingerPrintIcon,
+  },
+];
+
+export default function Services() {
   return (
-    <section>
-      <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-left py-12 pl-7">
-        Servicios
-      </h2>
-      <div className="flex flex-col lg:flex-row bg-blue-950">
-        {data.map((item, index) => {
-          return (
-            <div
-              key={index}
-              className="m-10 px-6 py-5 text-gray-100 bg-gradient-to-br from-blue-900 to-slate-500 rounded-sm shadow-xl"
-            >
-              <h3 className="pb-6 font-bold tracking-wide text-3xl">
-                {item.title}
-              </h3>
-              <p className="text-xl">{item.description}</p>
-            </div>
-          );
-        })}
+    <div className="bg-white py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-2xl lg:text-center">
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            Crece rápido 🚀
+          </h2>
+          <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Todo lo que necesitas para hacer crecer tu empresa
+          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">
+            Armamos un plan de marketing que se ajuste a tus necesidades para
+            tener una mayor presencia digital, afianzar clientes y aumentar
+            ventas.
+          </p>
+        </div>
+        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            {features.map((feature) => (
+              <div key={feature.name} className="relative pl-16">
+                <dt className="text-base font-semibold leading-7 text-gray-900">
+                  <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                    <feature.icon
+                      className="h-6 w-6 text-white"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  {feature.name}
+                </dt>
+                <dd className="mt-2 text-base leading-7 text-gray-600">
+                  {feature.description}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
       </div>
-    </section>
+    </div>
   );
 }
-
-export default Services;
