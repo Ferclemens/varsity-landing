@@ -4,23 +4,23 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Servicios", href: "#services" },
-  { name: "Nosotros", href: "#" },
+  { name: "Nosotros", href: "#about" },
   { name: "Clientes", href: "#clients" },
-  { name: "Contactos", href: "#" },
+  { name: "Contacto", href: "#contact" },
 ];
 
 export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white" id="#">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-4 lg:px-8 fixed w-full backdrop-blur bg-white/10"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="#hero" className="-m-1.5 p-1.5">
               <span className="sr-only">Varsity Raptor</span>
               <img
                 className="h-12 w-auto"
@@ -44,7 +44,7 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-bold leading-6 text-gray-900 hover:text-blue-800 transition-colors"
+                className="text-sm font-bold leading-6 text-gray-900 hover:text-blue-800 transition-colors text-shadow"
               >
                 {item.name}
               </a>
@@ -121,13 +121,13 @@ export default function Hero() {
               </p>
               <div className="mt-10 flex items-center gap-x-10">
                 <a
-                  href="#"
+                  href="#contact"
                   className="rounded-md bg-blue-800 px-6 py-3.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors"
                 >
                   Contactanos
                 </a>
                 <a
-                  href="#"
+                  href="#services"
                   className="text-lg font-semibold leading-6 text-gray-900"
                 >
                   Saber más <span aria-hidden="true">→</span>

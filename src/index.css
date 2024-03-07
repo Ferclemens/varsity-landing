@@ -84,7 +84,7 @@
 }
 .parallax {
   background: #16161a fixed no-repeat 40% 40%;
-  background-image: url("/public/teamdk.webp");
+  background-image: url("/teamdk.webp");
   background-size: cover;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -95,4 +95,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+.text-shadow {
+  text-shadow: 1px 1px 8px white;
 }

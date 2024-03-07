@@ -7,7 +7,10 @@ const steps = [
 
 export default function About() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 parallax">
+    <div
+      className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 parallax"
+      id="about"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">

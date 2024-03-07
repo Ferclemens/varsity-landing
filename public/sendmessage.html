@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./logo-small.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success! :D</title>
+    <meta name='description' content='Fernando Clemens - Web developer. Landing page to show my skills and work.'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+
+        .contanier {
+            height: calc(100vh - 100px);
+            width: auto;
+            background-color: rgb(20, 49, 146);
+            padding-top: 100px;
+        }
+
+        .message-container {
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            width: 500px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            color: #1a202c;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+        }
+
+        .message-img {
+            width: 130px;
+            height: 130px;
+            color: rgb(36, 142, 36);
+        }
+
+        .emoji--success {
+            font-size: 100px;
+            line-height: 0.1px;
+        }
+
+        h4 {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="message-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="message-img">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <h1>Gracias por escribirnos!</h1>
+            <h4>Responderemos su mensaje lo antes posible.</h4>
+            <p>volviendo al home. 🏠</p>
+        </div>
+    </div>
+    <script>
+        let tID = setTimeout(function () {
+            window.location.href = "http://localhost:5173/";
+            window.clearTimeout(tID);		// clear time out.
+        }, 5000);
+    </script>
+</body>
+
+</html>

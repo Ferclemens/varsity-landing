@@ -1,8 +1,8 @@
 import {
   ArrowPathIcon,
-  CloudArrowUpIcon,
-  FingerPrintIcon,
-  LockClosedIcon,
+  GlobeAltIcon,
+  ChatBubbleLeftRightIcon,
+  LinkIcon,
 } from "@heroicons/react/24/outline";
 
 const features = [
@@ -10,13 +10,13 @@ const features = [
     name: "Branding",
     description:
       "Potenciamos tu marca con identidad única y estrategias impactantes.",
-    icon: CloudArrowUpIcon,
+    icon: LinkIcon,
   },
   {
     name: "Comunity Management",
     description:
       "Construimos y gestionamos comunidades en línea para maximizar tu alcance y compromiso.",
-    icon: LockClosedIcon,
+    icon: ChatBubbleLeftRightIcon,
   },
   {
     name: "Análisis de rendimientos",
@@ -28,13 +28,13 @@ const features = [
     name: "Servicios web",
     description:
       "Creamos soluciones digitales personalizadas para tu éxito en línea.",
-    icon: FingerPrintIcon,
+    icon: GlobeAltIcon,
   },
 ];
 
 export default function Services() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white py-24 sm:py-32" id="services">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
