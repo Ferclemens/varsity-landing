@@ -7,14 +7,14 @@ import Services from "./components/Services";
 
 function App() {
   return (
-    <>
+    <div className="scroll-smooth">
       <Hero />
       <Services />
       <About />
       <Clients />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
