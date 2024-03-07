@@ -54,12 +54,12 @@ export default function Clients() {
     <div className="bg-white py-24 sm:py-32" id="clients">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="text-center text-3xl font-semibold leading-8 text-gray-900 pb-12">
-          Clientes que trabajan con nosotros
+          Clientes que confian en nosotros
         </h2>
         <div className="flex flex-wrap p-4 gap-10 sm:gap-16 justify-center">
           {logos.map((item, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="logo">
                 <img
                   className="col-span-2 h-16 w-36 sm:h-24 sm:w-44 object-contain lg:col-span-1"
                   src={item.img}

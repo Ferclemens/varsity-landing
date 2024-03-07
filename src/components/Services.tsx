@@ -7,46 +7,46 @@ import {
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Branding",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
+      "Potenciamos tu marca con identidad única y estrategias impactantes.",
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: "Comunity Management",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      "Construimos y gestionamos comunidades en línea para maximizar tu alcance y compromiso.",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: "Análisis de rendimientos",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      "Utilizamos datos detallados para identificar tendencias, mejorar estrategias y maximizar resultados.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security",
+    name: "Servicios web",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      "Creamos soluciones digitales personalizadas para tu éxito en línea.",
     icon: FingerPrintIcon,
   },
 ];
 
-export default function Example() {
+export default function Services() {
   return (
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Deploy faster
+            Crece rápido 🚀
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Todo lo que necesitas para hacer crecer tu empresa
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-            Suspendisse eget egestas a elementum pulvinar et feugiat blandit at.
-            In mi viverra elit nunc.
+            Armamos un plan de marketing que se ajuste a tus necesidades para
+            tener una mayor presencia digital, afianzar clientes y aumentar
+            ventas.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
