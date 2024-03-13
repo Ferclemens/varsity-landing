@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contact">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Contactanos
@@ -10,7 +10,7 @@ export default function Contact() {
         </p>
       </div>
       <form
-        action="#"
+        action="https://formsubmit.co/foclemens@gmail.com"
         method="POST"
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
@@ -24,6 +24,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="text"
                 name="first-name"
                 id="first-name"
@@ -58,6 +59,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <input
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -92,6 +94,7 @@ export default function Contact() {
             </label>
             <div className="mt-2.5">
               <textarea
+                required
                 name="message"
                 id="message"
                 rows={4}
@@ -109,6 +112,10 @@ export default function Contact() {
             Enviar
           </button>
         </div>
+        {/* FORM SUBMIT OPTIONS */}
+        <input type="hidden" name="_captcha" value="false"></input>
+        <input type="hidden" name="_template" value="box"></input>
+        <input type="hidden" name="_next" value="/sendmessage.html"></input>
       </form>
     </div>
   );
