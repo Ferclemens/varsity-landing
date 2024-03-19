@@ -83,8 +83,8 @@
   scroll-behavior: smooth;
 }
 .parallax {
-  background: #16161a fixed no-repeat 40% 40%;
-  background-image: url("/teamdk.webp");
+  background: #16161a fixed no-repeat 50% 40%;
+  background-image: url("/teamWork.webp");
   background-size: cover;
 }
 input[type="number"]::-webkit-inner-spin-button,

@@ -24,7 +24,7 @@ export default function Hero() {
               <span className="sr-only">Varsity Raptor</span>
               <img
                 className="h-12 w-auto"
-                src="./logo-full.png"
+                src="./VarsityLogoHeader.webp"
                 alt="logo empresa Varsity Raptor"
               />
             </a>

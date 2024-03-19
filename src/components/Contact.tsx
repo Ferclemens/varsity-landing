@@ -15,7 +15,7 @@ export default function Contact() {
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
+          <div className="sm:col-span-1">
             <label
               htmlFor="first-name"
               className="block text-sm font-semibold leading-6 text-gray-900"
@@ -33,7 +33,7 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-1">
             <label
               htmlFor="company"
               className="block text-sm font-semibold leading-6 text-gray-900"
@@ -50,7 +50,7 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-1">
             <label
               htmlFor="email"
               className="block text-sm font-semibold leading-6 text-gray-900"
@@ -68,7 +68,7 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className="sm:col-span-2">
+          <div className="sm:col-span-1">
             <label
               htmlFor="phone-number"
               className="block text-sm font-semibold leading-6 text-gray-900"
