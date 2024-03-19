@@ -10,7 +10,7 @@ export default function Contact() {
         </p>
       </div>
       <form
-        action="https://formsubmit.co/foclemens@gmail.com"
+        action="https://formsubmit.co/varsityraptor.sm@gmail.com"
         method="POST"
         className="mx-auto mt-16 max-w-xl sm:mt-20"
       >
@@ -107,7 +107,7 @@ export default function Contact() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-blue-800 hover:bg-blue-600 transition-colors px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Enviar
           </button>
@@ -115,7 +115,11 @@ export default function Contact() {
         {/* FORM SUBMIT OPTIONS */}
         <input type="hidden" name="_captcha" value="false"></input>
         <input type="hidden" name="_template" value="box"></input>
-        <input type="hidden" name="_next" value="/sendmessage.html"></input>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://varsityraptor.netlify.app/sendmessage.html"
+        ></input>
       </form>
     </div>
   );
