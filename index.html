@@ -10,6 +10,13 @@
 
 <body>
   <div id="root"></div>
+  <form name="contact" netlify netlify-honeypot="bot-field" action="/success/" hidden>
+    <input type="text" name="name" />
+    <input type='text' name='company' />
+    <input type="email" name="email" />
+    <input type="number" name="tel" />
+    <textarea name="message"></textarea>
+  </form>
   <script type="module" src="/src/main.tsx"></script>
 </body>
 
