@@ -44,7 +44,7 @@ const logos = [
     img: "./cl-12.webp",
   },
   {
-    alt: "Carniceria La Taba",
+    alt: "Tri Nea turismo de pesca",
     img: "./cl-11.webp",
   },
 ];
