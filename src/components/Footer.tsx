@@ -9,17 +9,29 @@ export default function Footer() {
           </a>
         </p>
         <div className="flex gap-5 lg:pr-48">
-          <a href="https://www.facebook.com/" target="_blank">
-            Facebook
+          <a href="https://www.facebook.com/VarsityRaptor/" target="_blank">
+            <img
+              src="./facebook.png"
+              alt="Facebook logo"
+              className="w-8 h-8 hover:w-9 hover:h-9 transition-all"
+            />
           </a>
           <a href="https://www.instagram.com/varsityraptor/" target="_blank">
-            Instagram
+            <img
+              src="./instagram.png"
+              alt="Instagram logo"
+              className="w-8 h-8 hover:w-9 hover:h-9 transition-all"
+            />
           </a>
           <a
             href="https://api.whatsapp.com/send?phone=543624633517&text="
             target="_blank"
           >
-            WhatsApp
+            <img
+              src="./whatsapp.png"
+              alt="Whatsapp logo"
+              className="w-8 h-8 hover:w-9 hover:h-9 transition-all"
+            />
           </a>
         </div>
       </div>

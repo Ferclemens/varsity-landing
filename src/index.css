@@ -84,7 +84,7 @@
 }
 .parallax {
   background: #16161a fixed no-repeat 50% 40%;
-  background-image: url("/teamWork.webp");
+  background-image: url("/ParallaxBackground.webp");
   background-size: cover;
 }
 input[type="number"]::-webkit-inner-spin-button,
@@ -99,5 +99,3 @@ input[type="number"] {
 .text-shadow {
   text-shadow: 1px 1px 8px white;
 }
-
-/*---------- MESSAGE.HTML ----------*/
