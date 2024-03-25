@@ -19,13 +19,13 @@ const features = [
     icon: ChatBubbleLeftRightIcon,
   },
   {
-    name: "Análisis de rendimientos",
+    name: "Análisis de Rendimientos",
     description:
       "Utilizamos datos detallados para identificar tendencias, mejorar estrategias y maximizar resultados.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Servicios web",
+    name: "Servicios Web",
     description:
       "Creamos soluciones digitales personalizadas para tu éxito en línea.",
     icon: GlobeAltIcon,

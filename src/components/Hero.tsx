@@ -23,7 +23,7 @@ export default function Hero() {
             <a href="#hero" className="-m-1.5 p-1.5">
               <span className="sr-only">Varsity Raptor</span>
               <img
-                className="h-12 w-auto"
+                className="h-14 w-auto"
                 src="./VarsityLogoHeader.webp"
                 alt="logo empresa Varsity Raptor"
               />
@@ -116,8 +116,8 @@ export default function Hero() {
                 Da ese impulso que tu marca necesita
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-600">
-                Creamos el plan que mejor se adapte a tu comercio para
-                incrementar tu presencia digital y aumentar tus ventas.
+                Creamos el plan de contenidos que mejor se adapte a tu comercio
+                para incrementar tu presencia digital y aumentar tus ventas.
               </p>
               <div className="mt-10 flex items-center gap-x-10">
                 <a
