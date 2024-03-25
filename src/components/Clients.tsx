@@ -1,5 +1,25 @@
 const logos = [
   {
+    alt: "SolTec",
+    img: "./cl-6.webp",
+  },
+  {
+    alt: "Resi-pack",
+    img: "./cl-7.webp",
+  },
+  {
+    alt: "Reactivar",
+    img: "./cl-5.webp",
+  },
+  {
+    alt: "Planeta Sport Gym",
+    img: "./cl-8.webp",
+  },
+  {
+    alt: "Carniceria Argentina",
+    img: "./cl-9.webp",
+  },
+  {
     alt: "Estudio juridico Sinkovich - Siebold - López",
     img: "./cl-1.webp",
   },
@@ -16,36 +36,16 @@ const logos = [
     img: "./cl-4.webp",
   },
   {
-    alt: "Reactivar",
-    img: "./cl-5.webp",
-  },
-  {
-    alt: "SolTec",
-    img: "./cl-6.webp",
-  },
-  {
-    alt: "Resi-pack",
-    img: "./cl-7.webp",
-  },
-  {
-    alt: "Planeta Sport Gym",
-    img: "./cl-8.webp",
-  },
-  {
-    alt: "Carniceria Argentina",
-    img: "./cl-9.webp",
-  },
-  {
     alt: "M",
     img: "./cl-10.webp",
   },
   {
-    alt: "Carniceria La Taba",
-    img: "./cl-11.webp",
-  },
-  {
     alt: "AN Express reparaciones",
     img: "./cl-12.webp",
+  },
+  {
+    alt: "Carniceria La Taba",
+    img: "./cl-11.webp",
   },
 ];
 
