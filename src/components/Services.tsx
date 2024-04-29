@@ -4,35 +4,36 @@ import {
   ChatBubbleLeftRightIcon,
   LinkIcon,
 } from "@heroicons/react/24/outline";
-
-const features = [
-  {
-    name: "Branding",
-    description:
-      "Potenciamos tu marca con identidad única y estrategias impactantes.",
-    icon: LinkIcon,
-  },
-  {
-    name: "Comunity Management",
-    description:
-      "Construimos y gestionamos comunidades en línea para maximizar tu alcance y compromiso.",
-    icon: ChatBubbleLeftRightIcon,
-  },
-  {
-    name: "Análisis de Rendimientos",
-    description:
-      "Utilizamos datos detallados para identificar tendencias, mejorar estrategias y maximizar resultados.",
-    icon: ArrowPathIcon,
-  },
-  {
-    name: "Servicios Web",
-    description:
-      "Creamos soluciones digitales personalizadas para tu éxito en línea.",
-    icon: GlobeAltIcon,
-  },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
+  const { t } = useTranslation();
+  const features = [
+    {
+      name: "Branding",
+      description:
+        "Potenciamos tu marca con identidad única y estrategias impactantes.",
+      icon: LinkIcon,
+    },
+    {
+      name: "Comunity Management",
+      description:
+        "Construimos y gestionamos comunidades en línea para maximizar tu alcance y compromiso.",
+      icon: ChatBubbleLeftRightIcon,
+    },
+    {
+      name: "Análisis de Rendimientos",
+      description:
+        "Utilizamos datos detallados para identificar tendencias, mejorar estrategias y maximizar resultados.",
+      icon: ArrowPathIcon,
+    },
+    {
+      name: "Servicios Web",
+      description:
+        "Creamos soluciones digitales personalizadas para tu éxito en línea.",
+      icon: GlobeAltIcon,
+    },
+  ];
   return (
     <div className="bg-white py-24 sm:py-32" id="services">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">

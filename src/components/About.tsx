@@ -1,11 +1,10 @@
-const steps = [
-  { name: "Análisis" },
-  { name: "Planificación" },
-  { name: "Plan de acción" },
-  { name: "Seguimiento" },
-];
-
 export default function About() {
+  const steps = [
+    { name: "Análisis" },
+    { name: "Planificación" },
+    { name: "Plan de acción" },
+    { name: "Seguimiento" },
+  ];
   return (
     <div
       className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 parallax"
