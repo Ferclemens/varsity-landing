@@ -47,7 +47,7 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-bold leading-6 text-gray-900 dark:text-gray-200 hover:text-blue-800 transition-colors text-shadow"
+                className="text-sm font-bold leading-6 text-gray-900 dark:text-gray-200 hover:text-blue-800 transition-colors "
               >
                 {item.name}
               </a>
@@ -63,7 +63,7 @@ export default function Hero() {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-1/2 overflow-y-auto bg-gradient-to-r from-blue-100 to-blue-100 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-1/2 overflow-y-auto bg-slate-300 dark:bg-slate-500 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Varsity Raptor</span>
@@ -89,12 +89,13 @@ export default function Hero() {
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 dark:text-gray-200 hover:bg-gray-50"
                     >
                       {item.name}
                     </a>
                   ))}
                   <LangButton />
+                  <ThemeButton />
                 </div>
               </div>
             </div>
