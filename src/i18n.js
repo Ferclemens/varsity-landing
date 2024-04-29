@@ -54,8 +54,8 @@ i18n
           contactFormLabel4: "Teléfono",
           contactFormLabel5: "Mensaje",
           contactButton: "Enviar",
-          footer:
-            "2024 Varsity Raptor, Todos los derechos reservados. | Desarrollado por Fer Clemens",
+          footerDetail:
+            "2024 Varsity Raptor, Todos los derechos reservados. | Desarrollado por",
         },
       },
       en: {
@@ -103,8 +103,8 @@ i18n
           contactFormLabel4: "Phone",
           contactFormLabel5: "Message",
           contactButton: "Send",
-          footer:
-            "© 2024 Varsity Raptor, All rights reserved. | Developed by Fer Clemens",
+          footerDetail:
+            "© 2024 Varsity Raptor, All rights reserved. | Developed by",
         },
       },
     },

@@ -10,27 +10,23 @@ export default function Services() {
   const { t } = useTranslation();
   const features = [
     {
-      name: "Branding",
-      description:
-        "Potenciamos tu marca con identidad única y estrategias impactantes.",
+      name: t("servicesFeaturename1"),
+      description: t("serviceFeatureDescription1"),
       icon: LinkIcon,
     },
     {
-      name: "Comunity Management",
-      description:
-        "Construimos y gestionamos comunidades en línea para maximizar tu alcance y compromiso.",
+      name: t("servicesFeaturename2"),
+      description: t("serviceFeatureDescription2"),
       icon: ChatBubbleLeftRightIcon,
     },
     {
-      name: "Análisis de Rendimientos",
-      description:
-        "Utilizamos datos detallados para identificar tendencias, mejorar estrategias y maximizar resultados.",
+      name: t("servicesFeaturename3"),
+      description: t("serviceFeatureDescription3"),
       icon: ArrowPathIcon,
     },
     {
-      name: "Servicios Web",
-      description:
-        "Creamos soluciones digitales personalizadas para tu éxito en línea.",
+      name: t("servicesFeaturename4"),
+      description: t("serviceFeatureDescription4"),
       icon: GlobeAltIcon,
     },
   ];
@@ -39,15 +35,13 @@ export default function Services() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Crece rápido 🚀
+            {t("servicesFirst")}
           </h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Todo lo que necesitas para hacer crecer tu empresa
+            {t("servicesTitle")}
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Armamos un plan de marketing que se ajuste a tus necesidades para
-            tener una mayor presencia digital, afianzar clientes y aumentar
-            ventas.
+            {t("servicesDescription")}
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
