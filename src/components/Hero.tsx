@@ -1,15 +1,16 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
-const navigation = [
-  { name: "Servicios", href: "#services" },
-  { name: "Nosotros", href: "#about" },
-  { name: "Clientes", href: "#clients" },
-  { name: "Contacto", href: "#contact" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function Hero() {
+  const { t } = useTranslation();
+  const navigation = [
+    { name: t("navigationServices"), href: "#services" },
+    { name: t("navigationAbout"), href: "#about" },
+    { name: t("navigationCustomers"), href: "#clients" },
+    { name: t("navigationContact"), href: "#contact" },
+  ];
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -113,24 +114,23 @@ export default function Hero() {
           <div className="max-w-2xl py-14 sm:py-14 lg:py-50" id="hero">
             <div className="text-left">
               <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                Da ese impulso que tu marca necesita
+                {t("heroSlogan")}
               </h1>
               <p className="mt-6 text-xl leading-8 text-gray-600">
-                Creamos el plan de contenidos que mejor se adapte a tu comercio
-                para incrementar tu presencia digital y aumentar tus ventas.
+                {t("heroSloganDetail")}
               </p>
               <div className="mt-10 flex items-center gap-x-10">
                 <a
                   href="#contact"
                   className="rounded-md bg-blue-800 px-6 py-3.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors"
                 >
-                  Contactanos
+                  {t("heroContactButton")}
                 </a>
                 <a
                   href="#services"
                   className="text-lg font-semibold leading-6 text-gray-900"
                 >
-                  Saber más <span aria-hidden="true">→</span>
+                  {t("heroMoreButton")} <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
