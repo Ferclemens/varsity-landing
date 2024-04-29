@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTranslation } from "react-i18next";
-import LangSwitch from "./LangSwitch";
+import LangButton from "./LangButton";
+import ThemeButton from "./ThemeButton";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -15,7 +16,7 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white" id="#">
+    <div className="bg-white dark:bg-slate-900" id="#">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-4 lg:px-8 fixed w-full backdrop-blur bg-white/10"
@@ -34,7 +35,7 @@ export default function Hero() {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-50"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
@@ -46,12 +47,13 @@ export default function Hero() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-sm font-bold leading-6 text-gray-900 hover:text-blue-800 transition-colors text-shadow"
+                className="text-sm font-bold leading-6 text-gray-900 dark:text-gray-200 hover:text-blue-800 transition-colors text-shadow"
               >
                 {item.name}
               </a>
             ))}
-            <LangSwitch />
+            <LangButton />
+            <ThemeButton />
           </div>
         </nav>
         <Dialog
@@ -92,7 +94,7 @@ export default function Hero() {
                       {item.name}
                     </a>
                   ))}
-                  <LangSwitch />
+                  <LangButton />
                 </div>
               </div>
             </div>
@@ -116,22 +118,22 @@ export default function Hero() {
         <div className="flex gap-10 py-5">
           <div className="max-w-2xl py-14 sm:py-14 lg:py-50" id="hero">
             <div className="text-left">
-              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl dark:text-gray-200">
                 {t("heroSlogan")}
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-600">
+              <p className="mt-6 text-xl leading-8 text-gray-600 dark:text-gray-400">
                 {t("heroSloganDetail")}
               </p>
               <div className="mt-10 flex items-center gap-x-10">
                 <a
                   href="#contact"
-                  className="rounded-md bg-blue-800 px-6 py-3.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors"
+                  className="rounded-md bg-blue-800 dark:bg-blue-500 px-6 py-3.5 text-lg font-semibold text-white shadow-sm hover:bg-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors"
                 >
                   {t("heroContactButton")}
                 </a>
                 <a
                   href="#services"
-                  className="text-lg font-semibold leading-6 text-gray-900"
+                  className="text-lg font-semibold leading-6 text-gray-900 dark:text-gray-400"
                 >
                   {t("heroMoreButton")} <span aria-hidden="true">→</span>
                 </a>

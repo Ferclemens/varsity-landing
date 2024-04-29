@@ -4,7 +4,7 @@ export default function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="w-full h-20 p-4">
-      <div className="flex flex-col-reverse justify-between py-6 gap-4 md:pb-4 md:pt-6 md:flex-row sm:px-10 items-center border-t text-xs text-slate-500">
+      <div className="flex flex-col-reverse justify-between py-6 gap-4 md:pb-4 md:pt-6 md:flex-row sm:px-10 items-center border-t text-xs text-slate-500 dark:text-slate-200">
         <p className="text-center">
           {t("footerDetail")}{" "}
           <a href="https://www.linkedin.com/in/foclemens/" target="_blank">
