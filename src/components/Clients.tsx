@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 const logos = [
@@ -54,17 +55,17 @@ const logos = [
 export default function Clients() {
   const { t } = useTranslation();
   return (
-    <div className="bg-white py-20 sm:py-28" id="clients">
+    <div className="bg-white dark:bg-slate-950 py-20 sm:py-28" id="clients">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center pb-20">
+        <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl text-center pb-20">
           {t("clientsTitle")}
         </h2>
         <div className="flex flex-wrap p-4 gap-10 sm:gap-16 justify-center">
           {logos.map((item, index) => {
             return (
-              <div key={index} className="logo">
+              <div key={index} className="logo" id="img">
                 <img
-                  className="col-span-2 h-16 w-36 sm:h-24 sm:w-44 object-contain lg:col-span-1 opacity-60"
+                  className="col-span-2 h-16 w-36 sm:h-24 sm:w-44 object-contain lg:col-span-1 opacity-60 dark:invert"
                   src={item.img}
                   alt={item.alt}
                 />
