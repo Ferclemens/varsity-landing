@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const logos = [
   {
     alt: "SolTec",
@@ -50,11 +52,12 @@ const logos = [
 ];
 
 export default function Clients() {
+  const { t } = useTranslation();
   return (
     <div className="bg-white py-20 sm:py-28" id="clients">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-center pb-20">
-          Marcas que confiaron en nosotros
+          {t("clientsTitle")}
         </h2>
         <div className="flex flex-wrap p-4 gap-10 sm:gap-16 justify-center">
           {logos.map((item, index) => {

@@ -1,12 +1,15 @@
+import { useTranslation } from "react-i18next";
+
 export default function Contact() {
+  const { t } = useTranslation();
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8" id="contact">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Contactanos
+          {t("contactTitle")}
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Respondemos todas tus consultas.
+          {t("contactDescription")}
         </p>
       </div>
       <form
@@ -21,7 +24,7 @@ export default function Contact() {
               htmlFor="name"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Nombre
+              {t("contactFormLabel1")}
             </label>
             <div className="mt-2.5">
               <input
@@ -39,7 +42,7 @@ export default function Contact() {
               htmlFor="company"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Empresa
+              {t("contactFormLabel2")}
             </label>
             <div className="mt-2.5">
               <input
@@ -56,7 +59,7 @@ export default function Contact() {
               htmlFor="email"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Email
+              {t("contactFormLabel3")}
             </label>
             <div className="mt-2.5">
               <input
@@ -74,7 +77,7 @@ export default function Contact() {
               htmlFor="tel"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Teléfono
+              {t("contactFormLabel4")}
             </label>
             <div className="mt-2.5">
               <input
@@ -91,7 +94,7 @@ export default function Contact() {
               htmlFor="message"
               className="block text-sm font-semibold leading-6 text-gray-900"
             >
-              Mensaje
+              {t("contactFormLabel5")}
             </label>
             <div className="mt-2.5">
               <textarea
@@ -110,7 +113,7 @@ export default function Contact() {
             type="submit"
             className="block w-full rounded-md bg-blue-800 hover:bg-blue-600 transition-colors px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
-            Enviar
+            {t("contactButton")}
           </button>
         </div>
       </form>
