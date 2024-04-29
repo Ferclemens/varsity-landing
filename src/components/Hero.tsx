@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useTranslation } from "react-i18next";
+import LangSwitch from "./LangSwitch";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -50,6 +51,7 @@ export default function Hero() {
                 {item.name}
               </a>
             ))}
+            <LangSwitch />
           </div>
         </nav>
         <Dialog
@@ -90,6 +92,7 @@ export default function Hero() {
                       {item.name}
                     </a>
                   ))}
+                  <LangSwitch />
                 </div>
               </div>
             </div>
