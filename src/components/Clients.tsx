@@ -54,7 +54,7 @@ const logos = [
 export default function Clients() {
   const { t } = useTranslation();
   return (
-    <div className="bg-white dark:bg-slate-950 py-20 sm:py-28" id="clients">
+    <div className="bg-white dark:bg-black py-20 sm:py-28" id="clients">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-200 sm:text-4xl text-center pb-20">
           {t("clientsTitle")}
