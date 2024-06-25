@@ -1,6 +1,6 @@
-# Forzar el tipo MIME correcto para archivos JavaScript
-<FilesMatch "\.js$">
-    AddType application/javascript .js
+# Forzar el tipo MIME correcto para archivos JavaScript y TypeScript
+<FilesMatch "\.(js|jsx|ts|tsx)$">
+    AddType application/javascript .js .jsx .ts .tsx
 </FilesMatch>
 
 # Redirigir todas las solicitudes a index.html (para SPA)
